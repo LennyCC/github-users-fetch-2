@@ -9,10 +9,11 @@
 </head>
 
 <body>
-  <form>
+  <form onsubmit="fillUserInfo(event)">
     <label for="githubuser">Github user:</label><br>
     <input type="text" id="githubuser" name="githubuser" placeholder="minion">
     <input type="submit" value="Search">
+    <p id="form-error" style="color:red; display:none"></p>
     
   </form> 
   
